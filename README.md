@@ -1,2 +1,2 @@
 # userscripts
-Scripts for TamperMonkey
+Scripts for TamperMonkey that mostly remove annoying ads, videos, and popups.
