@@ -29,6 +29,7 @@ jQuery(document).ready(function($) {
         'div.css-1c5lpxa',
         'div[data-spot-im-direction] div[product-header-placeholder]',
         'div[data-spot-im-direction] div[recirculation-ad-wrapper]',
+        'div.css-hzimsk.e1ewzxt00',
     ];
 
     (function changePage(){
@@ -39,6 +40,6 @@ jQuery(document).ready(function($) {
         $('div.fluid-width-video-wrapper').parent().remove();
 
         // There's some dynamic stuff that will keep re-appearing so just run every few seconds
-        setTimeout(changePage, 2000);
+        setTimeout(changePage, 3000);
     })();
 });
