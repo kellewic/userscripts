@@ -23,6 +23,7 @@ jQuery(document).ready(function($) {
         'div.HostedCarouselWidget__CarouselCard-sc-1aea2j8-0',
         'tr[class*="TransactionsOfferstyle__TransactionsInlineOfferTableRow"]',
         'div[class*="TransactionsOfferstyle__TransactionsBannerOfferWrapper"]',
+        'div[class*="OffersComponentstyle__WelcomeMatOfferWrapper"]',
     ];
 
     (function changePage(){
