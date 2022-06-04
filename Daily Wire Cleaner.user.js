@@ -30,6 +30,8 @@ jQuery(document).ready(function($) {
         'div[data-spot-im-direction] div[product-header-placeholder]',
         'div[data-spot-im-direction] div[recirculation-ad-wrapper]',
         'div.css-hzimsk.e1ewzxt00',
+        'div#wisepops-root',
+        'div.Toastify',
     ];
 
     (function changePage(){
