@@ -27,6 +27,10 @@ jQuery(document).ready(function($) {
     (function changePage(){
         $.each(elements, function(idx, val){
             $(val).remove();
+
+            if ($('button.ytp-ad-skip-button').length){
+                $('button.ytp-ad-skip-button').click();
+            }
         });
 
         // There's some dynamic stuff that will keep re-appearing so just run every few seconds
