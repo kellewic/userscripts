@@ -22,6 +22,7 @@ jQuery(document).ready(function($) {
     var elements = [
         'div#companion',
         'div.ytp-ad-overlay-slot',
+        'div#contents ytd-promoted-sparkles-web-renderer',
     ];
 
     (function changePage(){
