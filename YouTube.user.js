@@ -23,6 +23,8 @@ jQuery(document).ready(function($) {
         'div#companion',
         'div.ytp-ad-overlay-slot',
         'div#contents ytd-promoted-sparkles-web-renderer',
+        'div#big-yoodle',
+        'div#masthead-ad',
     ];
 
     (function changePage(){
