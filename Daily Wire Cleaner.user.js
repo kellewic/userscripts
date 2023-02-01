@@ -32,6 +32,8 @@ jQuery(document).ready(function($) {
         'div.css-hzimsk.e1ewzxt00',
         'div#wisepops-root',
         'div.Toastify',
+        'div[data-spotim-module="pitc"]',
+        'footer',
     ];
 
     (function changePage(){
