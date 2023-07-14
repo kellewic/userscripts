@@ -1,20 +1,20 @@
 // ==UserScript==
 // @name         Classic Wowhead
 // @namespace    http://tampermonkey.net/
-// @icon         https://www.google.com/s2/favicons?domain=wowhead.com
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=wowhead.com
 // @author       kellewic
-// @version      20211119
+// @version      20230714
 // @description  Get rid of low value stuff on Wowhead
-//
+
+// @match        *://www.wowhead.com/*
+
+// @grant        none
 // @nocompat     Chrome
 // @noframes
 // @run-at       document-start
-//
-// @include      *://*classic.wowhead.com*
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 /* globals jQuery */
-
 jQuery.noConflict();
 
 jQuery(document).ready(function($) {
@@ -27,6 +27,8 @@ jQuery(document).ready(function($) {
         'div#aplify-ad',
         'div.zaf-unit-wrapper',
         'div#ad-skin',
+        'div#vid-pos-body',
+        'div#video-pos-body',
     ];
 
     (function changePage(){

@@ -3,14 +3,14 @@
 // @namespace    http://tampermonkey.net/
 // @icon         https://www.google.com/s2/favicons?domain=dailywire.com
 // @author       kellewic
-// @version      20200527
+// @version      20230714
 // @description  Get rid of low value stuff on Daily Wire
 //
 // @nocompat     Chrome
 // @noframes
 // @run-at       document-start
 //
-// @include      *://*dailywire.com*
+// @match      *://www.dailywire.com/*
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 /* globals jQuery */
