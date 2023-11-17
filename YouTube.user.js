@@ -10,7 +10,7 @@
 // @noframes
 // @run-at       document-start
 //
-// @include      *://*youtube.com*
+// @match        *://www.youtube.com/*
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 /* globals jQuery */
@@ -33,6 +33,9 @@ jQuery(document).ready(function($) {
 
             if ($('button.ytp-ad-skip-button').length){
                 $('button.ytp-ad-skip-button').click();
+            }
+            else if ($('button.ytp-ad-skip-button-modern').length){
+                $('button.ytp-ad-skip-button-modern').click();
             }
         });
 
