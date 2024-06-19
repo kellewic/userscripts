@@ -34,6 +34,9 @@ jQuery(document).ready(function($) {
             if ($('button.ytp-ad-skip-button').length){
                 $('button.ytp-ad-skip-button').click();
             }
+            else if ($('button.ytp-skip-ad-button').length){
+                $('button.ytp-skip-ad-button').click();
+            }
             else if ($('button.ytp-ad-skip-button-modern').length){
                 $('button.ytp-ad-skip-button-modern').click();
             }
