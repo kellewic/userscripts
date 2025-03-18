@@ -1,0 +1,38 @@
+// ==UserScript==
+// @name         IBD Cleaner
+// @namespace    http://tampermonkey.net/
+// @icon         https://www.google.com/s2/favicons?domain=investors.com
+// @author       kellewic
+// @version      20250318
+// @description  Get rid of low value stuff on IBD
+//
+// @nocompat     Chrome
+// @noframes
+// @run-at       document-start
+//
+// @match      *://www.investors.com/*
+// @require      https://code.jquery.com/jquery-3.7.1.min.js
+// ==/UserScript==
+/* globals jQuery */
+jQuery.noConflict();
+
+jQuery(document).ready(function($) {
+    'use strict';
+
+    var elements = [
+        'div.market-promo',
+        'div.bottomAds',
+    ];
+
+    (function changePage(){
+        $.each(elements, function(idx, val){
+            $(val).remove();
+        });
+
+        $('div.market-banner-container').parent().remove();
+        $('div.headerAds').css('display', 'none');
+
+        // There's some dynamic stuff that will keep re-appearing so just run every few seconds
+        setTimeout(changePage, 2000);
+    })();
+});
