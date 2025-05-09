@@ -21,7 +21,9 @@ jQuery(document).ready(function($) {
 
     var elements = [
         "div.col-left",
+        "div.col-left-big",
         "div.col-right",
+        "div.col-right-big",
         "div#nitro-float-close",
         "div.na-float-visible",
         "div.col-top-logo"
