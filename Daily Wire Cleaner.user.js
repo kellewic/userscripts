@@ -34,6 +34,9 @@ jQuery(document).ready(function($) {
         'div.Toastify',
         'div[data-spotim-module="pitc"]',
         'footer',
+        'div[class^="Homepage_carouselContainer__"]',
+        'div[class^="global-banner_bannerContainer__"]',
+        'section[class^="Carousel-v2_carouselSection__"]',
     ];
 
     (function changePage(){
