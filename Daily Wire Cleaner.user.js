@@ -37,6 +37,8 @@ jQuery(document).ready(function($) {
         'div[class^="Homepage_carouselContainer__"]',
         'div[class^="global-banner_bannerContainer__"]',
         'section[class^="Carousel-v2_carouselSection__"]',
+        'div.homepage-ad-unit',
+        'div.homepage-articles-ad-wrapper',
     ];
 
     (function changePage(){
